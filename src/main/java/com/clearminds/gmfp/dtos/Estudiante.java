@@ -5,7 +5,15 @@ public class Estudiante {
 	private String apellido;
 	private int id;
 	private int edad;
+	private String fechaModificacion;
 	
+	
+	public String getFechaModificacion() {
+		return fechaModificacion;
+	}
+	public void setFechaModificacion(String fechaModificacion) {
+		this.fechaModificacion = fechaModificacion;
+	}
 	public int getEdad() {
 		return edad;
 	}
@@ -32,25 +40,29 @@ public class Estudiante {
 	}
 	
 
-	public Estudiante(String nombre, String apellido, int edad) {
+
+	public Estudiante(String nombre, String apellido, int edad, String fechaModificacion) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
+		this.fechaModificacion = fechaModificacion;
 	}
-	public Estudiante(String nombre, String apellido, int id, int edad) {
+	public Estudiante(String nombre, String apellido, int id, int edad, String fechaModificacion) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.id = id;
 		this.edad = edad;
+		this.fechaModificacion = fechaModificacion;
 	}
 	public Estudiante() {
 		
 	}
 	@Override
 	public String toString() {
-		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + ", edad=" + edad + "]";
+		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + ", edad=" + edad
+				+ ", fechaModificacion=" + fechaModificacion + "]";
 	}
 	
 	
