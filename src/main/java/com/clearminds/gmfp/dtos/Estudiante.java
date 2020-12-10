@@ -4,6 +4,14 @@ public class Estudiante {
 	private String nombre;
 	private String apellido;
 	private int id;
+	private int edad;
+	
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -22,24 +30,29 @@ public class Estudiante {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public Estudiante(String nombre, String apellido, int id) {
+	
+
+	public Estudiante(String nombre, String apellido, int edad) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+	}
+	public Estudiante(String nombre, String apellido, int id, int edad) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.id = id;
-	}
-	public Estudiante(String nombre, String apellido) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
+		this.edad = edad;
 	}
 	public Estudiante() {
 		
 	}
 	@Override
 	public String toString() {
-		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + "]";
+		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + ", edad=" + edad + "]";
 	}
+	
 	
 	
 	
